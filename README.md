@@ -154,15 +154,7 @@ VITE_APP_EMAILJS_RECIEVER=your@email.com
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
-## :camera: Screenshots:
 
-![Showcase your skills](/.github/images/img1.png "Showcase your skills")
-
-![Showcase your projects](/.github/images/img2.png "Showcase your projects")
-
-![Modern UI/UX](/.github/images/img3.png "Modern UI/UX")
-
-![Functional Contact form](/.github/images/img4.png "Functional Contact form")
 
 ## :gear: Tech Stack
 
