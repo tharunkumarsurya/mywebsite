@@ -2,7 +2,7 @@
 
 # Modern 3D Portfolio using React, Three.js and Typescript
 
-![Modern 3D Portfolio using React, Three.js and Typescript](/.github/images/img_main.png "Modern 3D Portfolio using React, Three.js and Typescript")
+
 
 [![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
 [![GitHub license](https://flat.badgen.net/github/license/sanidhyy/3d-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d-portfolio/blob/main/LICENSE "GitHub license")
