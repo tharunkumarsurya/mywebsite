@@ -91,12 +91,12 @@ const ProjectCard = ({
 // Works
 export const Works = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper idName="Projects">
       <>
         {/* Title */}
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>My Work</p>
-          <h2 className={styles.sectionHeadText}>Projects.</h2>
+          <h2 className={styles.sectionHeadText}>Proj<span className="text-purple-500">ects.</span></h2>
         </motion.div>
 
         {/* About */}

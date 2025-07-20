@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 
 import { SOCIALS } from "../constants";
 import { styles } from "../styles";
@@ -13,17 +14,28 @@ const Footer = () => {
         "w-full flex items-center py-8 bg-primary border-t border-t-secondary/5"
       )}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <p className="text-white text-md font-bold flex">
-          &copy; Shubham {new Date().getFullYear()}. All rights reserved.
+      <div className="w-full flex flex-col justify-center items-center gap-4 max-w-7xl mx-auto">
+        <p className="text-white text-md font-bold text-center">
+          &copy; Tharun {new Date().getFullYear()}. All rights reserved.
+        </p>
+        <p className="text-purple-500 text-lg font-bold text-center">
+          <Typewriter
+            words={["Connect With Me :)"]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={120}
+            deleteSpeed={80}
+            delaySpeed={2000}
+          />
         </p>
 
-        {/* Nav Links (Desktop) */}
-        <ul className="list-none hidden flex-row sm:flex gap-10">
+        {/* Nav Links (Social Icons) */}
+        <ul className="list-none flex gap-6">
           {SOCIALS.map((social) => (
             <li
               key={social.name}
-              className="text-secondary font-poppins font-medium cursor-pointer text-[16px] opacity-80 hover:opacity-100 transition"
+              className="text-secondary font-poppins font-medium cursor-pointer text-[16px] opacity-100 hover:opacity-40 transition"
             >
               <Link to={social.link} target="_blank" rel="noreferrer noopener">
                 <img src={social.icon} alt={social.name} className="h-6 w-6" />

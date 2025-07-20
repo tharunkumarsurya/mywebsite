@@ -8,21 +8,22 @@ import {
   web,
   javascript,
   typescript,
+  python,
   html,
   css,
   reactjs,
-  redux,
+  // redux,
   tailwind,
-  nodejs,
+  // nodejs,
   mongodb,
-  git,
-  figma,
+  // git,
+  // figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  threejs,
+  // meta,
+  // starbucks,
+  // tesla,
+  // shopify,
+  // threejs,
   project1,
   project2,
   project3,
@@ -32,10 +33,18 @@ import {
   user1,
   user2,
   user3,
-  youtube,
+  // youtube,
   linkedin,
-  twitter,
+  // twitter,
   github,
+  githubs,
+  sql,
+  edu,
+  kali,
+  amazon,
+  whatsapp,
+  instagram,
+  facebook,
 } from "../assets";
 
 // Navbar Links
@@ -46,34 +55,39 @@ export const NAV_LINKS = [
     link: null,
   },
   {
-    id: "work",
-    title: "Work",
+    id: "Education",
+    title: "Education",
+    link: null,
+  },
+   {
+    id: "My",
+    title: "My Skills",
     link: null,
   },
   {
-    id: "contact",
+    id: "Projects",
+    title: "Projects",
+    link: null,
+  },
+  {
+    id: "Contact",
     title: "Contact",
-    link: null,
-  },
-  {
-    id: "source-code",
-    title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio/",
+    link: "",
   },
 ] as const;
 
 // Services
 export const SERVICES = [
   {
-    title: "Web Developer",
+    title: "Data Scientist",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "python Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "web Developer",
     icon: backend,
   },
   {
@@ -84,6 +98,10 @@ export const SERVICES = [
 
 // Technologies
 export const TECHNOLOGIES = [
+   {
+    name: "python",
+    icon: python,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -105,91 +123,108 @@ export const TECHNOLOGIES = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Amazon",
+    icon: amazon,
   },
+  {
+    name: "kali",
+    icon: kali,
+  },
+  {
+    name: "sql",
+    icon: sql,
+  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+  // {
+  //   name: "Node JS",
+  //   icon: nodejs,
+  // },
   {
     name: "MongoDB",
     icon: mongodb,
   },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "github",
+    icon: githubs,
   },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
   {
     name: "docker",
     icon: docker,
   },
+ 
+  
 ] as const;
 
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Master of Computer Applications",
+    company_name: "East West Institute of Technology, Bengaluru",
+    icon: edu,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Feb 2024 - oct 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I am currently pursuing a Master of Computer Applications (MCA) at East West Institute of Technology, Bengaluru.",
+      "1st sem SGPA: 8 / 2nd sem SGPA: 7.5 / 3rd sem SGPA: 9",
+      "My academic journey here is equipping me with a strong foundation in computer science and application development.",
+      "The institute's robust curriculum and experienced faculty are helping me enhance my technical skills, problem-solving abilities, and industry readiness.",
+      "I'm also actively engaging in projects and collaborative learning opportunities to gain practical exposure in this dynamic field.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Bachelor of Science - Computer Science",
+    company_name: "Government Science College, Hassan",
+    icon: edu,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jul 2020 - sep 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I successfully completed a Bachelor of Science (BSc) in Computer Science in 2023, achieving a CGPA of 6.7. ",
+      "Through this program, I gained a solid foundation in computer science principles, programming, and problem-solving.",
+      "It allowed me to explore various areas of technology, preparing me to tackle real-world challenges.",
+      "The experience has strengthened my passion for the field and motivated me to continue expanding my knowledge and skills.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "PUC-PCMC",
+    company_name: "Student's PU College, Hassan",
+    icon: edu,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jun 2019 - mar 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I completed my Pre-University Course (PUC) with a specialization in PCMC (Physics, Chemistry, Mathematics, and Computer Science), achieving a percentage of 67.78. ",
+      " During this phase, I built a strong academic foundation in science and mathematics, while also developing analytical and problem-solving skills.",
+      "This curriculum provided me with valuable insights and prepared me for further studies in computer science and related fields.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "SSLC",
+    company_name: "Sri Adichunchanagiri English Medium School, Hassan",
+    icon: edu,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jun 2017 - mar 2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I completed my Secondary School Leaving Certificate (SSLC) with a percentage of 69.88. ",
+      "This milestone provided me with a strong academic foundation across diverse subjects and helped me develop essential learning habits.",
+      "It marked the beginning of my journey toward further studies and personal growth, laying the groundwork for my academic and professional aspirations.",
     ],
   },
 ] as const;
@@ -199,25 +234,25 @@ export const TESTIMONIALS = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    name: "Pranuth H M",
+    designation: "DevOps Engineer",
+    company: ".",
     image: user1,
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+    name: "Suhas Kawshik",
+    designation: "Java Developer",
+    company: ".",
     image: user2,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "After Rick optimized his website, his traffic increased by 50%. We can't thank them enough!",
+    name: "Nishanth P",
+    designation: "Marketing Manager",
+    company: ".",
     image: user3,
   },
 ] as const;
@@ -243,8 +278,8 @@ export const PROJECTS = [
       },
     ],
     image: project1,
-    source_code_link: "https://github.com/sanidhyy/disney-clone",
-    live_site_link: "https://clonedisneyplus.web.app/",
+    source_code_link: "",
+    live_site_link: "",
   },
   {
     name: "Golds Gym",
@@ -265,8 +300,8 @@ export const PROJECTS = [
       },
     ],
     image: project2,
-    source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app/",
+    source_code_link: "",
+    live_site_link: "",
   },
   {
     name: "Shoppy",
@@ -287,8 +322,8 @@ export const PROJECTS = [
       },
     ],
     image: project3,
-    source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-    live_site_link: "https://shoppy-dashboard-react.netlify.app/",
+    source_code_link: "",
+    live_site_link: "",
   },
   {
     name: "TikTok Clone",
@@ -309,8 +344,8 @@ export const PROJECTS = [
       },
     ],
     image: project4,
-    source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-    live_site_link: "https://tiktok-clone-react.vercel.app/",
+    source_code_link: "",
+    live_site_link: "",
   },
   {
     name: "Cryptoverse",
@@ -331,8 +366,8 @@ export const PROJECTS = [
       },
     ],
     image: project5,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://reactjscryptoapp.netlify.app/",
+    source_code_link: "",
+    live_site_link: "",
   },
   {
     name: "Travel Advisor",
@@ -353,30 +388,35 @@ export const PROJECTS = [
       },
     ],
     image: project6,
-    source_code_link: "https://github.com/sanidhyy/travel-advisor",
-    live_site_link: "https://travel-advisor-reactjs.netlify.app/",
+    source_code_link: "",
+    live_site_link: "",
   },
 ] as const;
 
 export const SOCIALS = [
   {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com/@OPGAMER.",
+    name: "whatsapp",
+    icon: whatsapp,
+    link: "whatsapp://send?phone=916366598233&text=Hello%20Tharun",
   },
   {
-    name: "Linkedin",
+    name: "Instagram",
+    icon: instagram,
+    link: "https://www.instagram.com/mr___suryx_____unofficixl",
+  },
+  {
+    name: "Facebook",
+    icon: facebook,
+    link: "https://www.facebook.com/tarunkumar.tarunkumar.50115161?mibexti=ZbWKwdL",
+  },
+  {
+    name: "LinkedIn",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "https://www.linkedin.com/in/tharun-kumar-r-g-7661192b9",
   },
   {
-    name: "Twitter",
-    icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
-  },
-  {
-    name: "GitHub",
+    name: "Github",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/Tharunkumarsurya",
   },
 ] as const;

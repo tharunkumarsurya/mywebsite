@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 
 import { logo, menu, close } from "../assets";
 import { NAV_LINKS } from "../constants";
@@ -12,7 +13,6 @@ type NavbarProps = {
 
 // Navbar
 export const Navbar = ({ hide }: NavbarProps) => {
-  // state variables
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
@@ -50,9 +50,31 @@ export const Navbar = ({ hide }: NavbarProps) => {
           }}
         >
           <img src={logo} alt="Logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Shubham&nbsp;<span className="sm:block hidden">| Developer</span>
-          </p>
+
+           <p className="text-[18px] font-bold cursor-pointer flex gap-2 items-center">
+           <span className="animate-gradient">THaRUn_SuRyA</span>
+            <span className="text-white">|</span>
+            <span className="animate-gradient">
+    <Typewriter
+      words={[
+        " Data Scientist",
+        " Web Developer",
+        " UI/UX Designer",
+        " 3D Visualizer",
+        " Programmer",
+      ]}
+      loop={true}
+      cursor
+      cursorStyle="|"
+      typeSpeed={100}
+      deleteSpeed={50}
+      delaySpeed={1000}
+    />
+  </span>
+</p>
+
+
+
         </Link>
 
         {/* Nav Links (Desktop) */}
@@ -99,7 +121,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
                   key={link.id}
                   className={cn(
                     active === link.title ? "text-white" : "text-secondary",
-                    "font-poppins font-medium cursor-pointer text-[16px]"
+                    "font-poppins font-medium cursor-pointer text-[16px] opacity-80 hover:opacity-40  transition "
                   )}
                   onClick={() => {
                     !link.link && setToggle(!toggle);
@@ -126,3 +148,5 @@ export const Navbar = ({ hide }: NavbarProps) => {
     </nav>
   );
 };
+
+export default Navbar;

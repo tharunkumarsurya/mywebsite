@@ -217,3 +217,136 @@
       -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+
+
+
+
+.button-rgb {
+  position: relative;
+  display: inline-block;
+  padding: 12px 32px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.75rem;
+  background-color: #1a1a1a;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.button-rgb::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00ab,
+    #ff0000
+  );
+  background-size: 400%;
+  border-radius: 0.85rem;
+  z-index: -1;
+  animation: rgb-border 4s linear infinite;
+}
+
+.button-rgb span {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes rgb-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+.animated-border {
+  position: relative;
+  display: inline-block;
+  padding: 12px 32px;
+  color: #ffffff;
+  border-radius: 8px;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #00ff00,
+    #0000ff,
+    #ff0000,
+    #00ff00,
+    #0000ff
+  );
+  background-size: 400%;
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+.animated-border::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #0f0f0f;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400% 0;
+  }
+}
+
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite;
+}
