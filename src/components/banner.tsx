@@ -48,17 +48,29 @@ const Banner = ({ hide, setHide }: BannerProps) => {
             />
             <span className="sr-only">Light bulb</span>
           </span>
-          <span>
-            Did you enjoy this portfolio? Take a look at my{" "}
-            <Link
-              to="https://tharunsurya.netlify.app/"
+          <span className="flex items-center gap-2">
+            <span>
+              Did you enjoy this portfolio? Take a look at my{" "}
+              <Link
+                to="https://tharunsurya.netlify.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"
+              >
+                old portfolio
+              </Link>
+              .
+            </span>
+            <a
+              href="https://tharunsuryaportfolio.netlify.app"
               target="_blank"
-              rel="noreferrer noopener"
-              className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"
+              rel="noopener noreferrer"
             >
-              old portfolio
-            </Link>
-            .
+              <img
+                src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white"
+                alt="Old Portfolio"
+              />
+            </a>
           </span>
         </p>
       </div>
@@ -78,4 +90,5 @@ const Banner = ({ hide, setHide }: BannerProps) => {
 };
 
 export default Banner;
+
 
