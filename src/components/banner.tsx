@@ -28,38 +28,54 @@ const Banner = ({ hide, setHide }: BannerProps) => {
     localStorage.setItem(BANNER_KEY, "1");
   };
 
- return (
-  <div
-    id="sticky-banner"
-    tabIndex={-1}
-    className={`${
-      hide ? "hidden" : "flex"
-    } fixed top-0 left-0 w-full z-[9999] min-h-[100px] bg-primary justify-between p-4 shadow-md opacity-95`}
-  >
-    <div className="flex items-center mx-auto">
-      <p className="text-sm text-gray-300">
-        If this <span className="text-green-500">3D-PORTFOLIO</span> is NOT supported <br />
-        on your <span className="text-red-500">ANDROID DEVICE</span>, visit 👉{" "}
-        <a
-          href="https://tharunsurya.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 underline"
-        >
-          OLD Portfolio
-        </a>{" "}
-        👈.
-      </p>
-    </div>
-    <button
-      onClick={handleBannerClose}
-      className="text-gray-400 hover:text-white ml-4"
+  return (
+    <div
+      id="sticky-banner"
+      tabIndex={-1}
+      className={`${
+        hide ? "hidden" : "block"
+      } absolute h-20 top-0 left-0 z-50 flex justify-between w-full p-4 bg-primary shadow-md opacity-[0.98]`}
     >
-      Close Banner ✖
-    </button>
-  </div>
-);
-
+      <div className="flex items-center mx-auto">
+        <p className="flex items-center text-sm font-normal text-gray-500 ">
+          <span className="inline-flex p-1 mr-3 bg-gray-200 rounded-full ">
+            <img
+              src={bulb}
+              alt="bulb"
+              height={12}
+              width={12}
+              className="text-gray-500"
+            />
+            <span className="sr-only">Light bulb</span>
+          </span>
+          <span>
+            Did you enjoy this portfolio? Take a look at my{" "}
+            <Link
+              to="https://tharunsurya.netlify.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"
+            >
+              new portfolio
+            </Link>
+            .
+          </span>
+        </p>
+      </div>
+      <div className="flex items-center">
+        <button
+          data-dismiss-target="#sticky-banner"
+          onClick={handleBannerClose}
+          type="button"
+          className="flex-shrink-0 inline-flex justify-center items-center text-gray-400 hover:bg-gray-800 rounded-lg text-sm p-1.5 "
+        >
+          <img src={close} alt="close" height={12} width={12} />
+          <span className="sr-only">Close banner</span>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default Banner;
+
