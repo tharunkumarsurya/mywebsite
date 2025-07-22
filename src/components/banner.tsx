@@ -56,7 +56,7 @@ const Banner = ({ hide, setHide }: BannerProps) => {
               rel="noreferrer noopener"
               className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"
             >
-              new portfolio
+              old portfolio
             </Link>
             .
           </span>
