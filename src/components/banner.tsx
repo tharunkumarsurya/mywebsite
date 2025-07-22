@@ -62,14 +62,12 @@ const Banner = ({ hide, setHide }: BannerProps) => {
               .
             </span>
             <a
-              href="https://tharunsuryaportfolio.netlify.app"
+              href="https://tharunsurya.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white"
-                alt="Old Portfolio"
-              />
+              <img src="https://img.shields.io/badge/%F0%9F%91%89%20Visit%20My%20OLD%20Portfolio%20%F0%9F%91%88-white?style=for-the-badge&logo=About.me&logoColor=green&labelColor=white&color=white" />
+
             </a>
           </span>
         </p>
