@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
@@ -13,15 +13,31 @@ import {
 } from "./components";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
+import { isAndroidDevice } from "./utils/detectDevice"; // ✅ New import
 
-// App
 const App = () => {
   const [hide, setHide] = useState(true);
+  const [isAndroid, setIsAndroid] = useState(false);
+
+  useEffect(() => {
+    setIsAndroid(isAndroidDevice());
+  }, []);
+
+  if (isAndroid) {
+    return (
+      <div className="flex items-center justify-center h-screen w-screen bg-black text-white text-center p-4">
+        <h1 className="text-xl font-bold">
+          🚫 This 3D Portfolio is not supported on <span className="text-red-500">ANDROID DEVICE .</span><br />
+          Please use a <span className="text-green-500">Laptop or Apple device</span> 🚫.
+        </h1>
+      </div>
+    );
+  }
 
   return (
     <BrowserRouter>
       <Banner hide={hide} setHide={setHide} />
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-primary overflow-hidden">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar hide={hide} />
           <Hero />
@@ -31,8 +47,6 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
-
-        {/* Contact */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
