@@ -23,16 +23,28 @@ const App = () => {
     setIsAndroid(isAndroidDevice());
   }, []);
 
-  if (isAndroid) {
-    return (
-      <div className="flex items-center justify-center h-screen w-screen bg-black text-white text-center p-4">
-        <h1 className="text-xl font-bold">
-          🚫 This 3D Portfolio is not supported on <span className="text-red-500">ANDROID DEVICE .</span><br />
-          Please use a <span className="text-green-500">Laptop or Apple device</span> 🚫.
-        </h1>
-      </div>
-    );
-  }
+ if (isAndroid) {
+  return (
+    <div className="flex flex-col gap-6 items-center justify-center h-screen w-screen bg-black text-white text-center p-4">
+      <h1 className="text-xl font-bold">
+        🚫 This <span className="text-red-500">ANDROID DEVICE</span> is not supported.<br />
+        Please use a <span className="text-green-500">Laptop or Apple device</span>.
+      </h1>
+
+      <a
+        href="https://tharunsurya.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white"
+          alt="Old Portfolio"
+        />
+      </a>
+    </div>
+  );
+}
+
 
   return (
     <BrowserRouter>
