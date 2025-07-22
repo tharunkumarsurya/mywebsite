@@ -27,8 +27,8 @@ const App = () => {
   return (
     <div className="flex flex-col gap-6 items-center justify-center h-screen w-screen bg-black text-white text-center p-4">
       <h1 className="text-xl font-bold">
-        🚫 This <span className="text-red-500">ANDROID DEVICE</span> is not supported.<br />
-        Please use a <span className="text-green-500">Laptop or Apple device</span>.
+              🚫 This 3D Portfolio is not supported on <span className="text-red-500">ANDROID DEVICE .</span><br />
+          Please use a <span className="text-green-500">Laptop or Apple device</span> 🚫.
       </h1>
 
       <a
@@ -36,10 +36,8 @@ const App = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white"
-          alt="Old Portfolio"
-        />
+       <img src="https://img.shields.io/badge/%F0%9F%91%89%20Visit%20My%20OLD%20Portfolio%20%F0%9F%91%88-white?style=for-the-badge&logo=About.me&logoColor=green&labelColor=green&color=green" />
+
       </a>
     </div>
   );
