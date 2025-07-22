@@ -49,7 +49,9 @@ const Banner = ({ hide, setHide }: BannerProps) => {
             <span className="sr-only">Light bulb</span>
           </span>
           <span>
-            Did you enjoy this portfolio? Take a look at my{" "}
+            If this <span className="text-green-500">3D-PORTFOLIO</span> if NOT Supported <br />
+            for Your <span className="text-red-500">ANDROID DEVICE</span> means go through <br />
+            The My 👉OLD Simple Portfolio👈 .{" "}
             <Link
               to="https://tharunsurya.netlify.app/"
               target="_blank"
